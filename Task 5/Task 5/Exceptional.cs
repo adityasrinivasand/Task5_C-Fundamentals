@@ -8,21 +8,20 @@ namespace Task_5
 {
     public class ExceptionalHandling
     {
-        int result = 0;
-        public void division(int num1, int num2)
+        public void division()
         {
+            int x = 0;
+            int div = 0;
             try
             {
-                result = num1 / num2;
+                div = 100 / x;
+                Console.WriteLine("This linein not executed");
             }
-            catch (DivideByZeroException e)
+            catch (DivideByZeroException)
             {
-                Console.WriteLine("Exception caught: {0}", e);
+                Console.WriteLine("Exception occured");
             }
-            finally
-            {
-                Console.WriteLine("Result: {0}", result);
-            }
+            Console.WriteLine($"Result is {div}");
         }
     }
 }

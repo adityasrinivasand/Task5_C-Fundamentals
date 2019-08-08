@@ -10,7 +10,7 @@ namespace Task_5
     {
         int i = 12;
         double d = 765.12;
-        private float f = 56.123F;
+        float f = 56.123F;
 
         // Using Built- In Type Conversion 
         // Methods & Displaying Result 
@@ -21,5 +21,17 @@ namespace Task_5
             Console.WriteLine(Convert.ToUInt32(f));
             Console.WriteLine(Convert.ToDouble(i));
         }          
+    }
+    public class ExplicitConversion
+    {
+        int x = 21;
+        int y = 5;
+
+        
+        public void display()
+        {
+            double b = (double)x / y;
+            Console.WriteLine(b);
+        }
     }
 }

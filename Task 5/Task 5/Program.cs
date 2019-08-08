@@ -82,11 +82,12 @@ namespace Task_5
             Console.ReadLine();
 
             /* Inheritance */
-            Square sq = new Square();
+            Cube cu = new Cube();
 
             Console.WriteLine("Inheritance O/P");
-            sq.setside(5);
-            Console.WriteLine($"Total area: {sq.getArea()}" );
+            cu.setside(5);
+            Console.WriteLine($"Total area: {cu.getArea()}" );
+            Console.WriteLine($"Total Volume of Cube: {cu.getVolume()}");
             Console.ReadLine();
 
             /* Polymorphism */
@@ -148,6 +149,11 @@ namespace Task_5
             ic.displayic();
             Console.ReadLine();
 
+            Console.WriteLine("2) Explicit Type Conversion O/P");
+            ExplicitConversion ec = new ExplicitConversion();
+            ec.display();
+            Console.ReadLine();
+
             /* Overriding */
             Console.WriteLine("Overriding O/P");
             Overridingbase obj = new Overridingbase();
@@ -159,7 +165,28 @@ namespace Task_5
             /* Exceptional Handling */
             Console.WriteLine("Exceptional Handling O/P");
             ExceptionalHandling ex = new ExceptionalHandling();
-            ex.division(25, 0);
+            ex.division();
+            Console.ReadLine();
+
+            /* Base and Derived Class */
+            Console.WriteLine("Base and Derived O/P");
+            Derived de = new Derived();
+            de.readers("Aditya", "Maths");
+            Console.ReadLine();
+
+            /* Static and Non Static*/
+            Console.WriteLine("Static and Non Static O/P");
+            Console.WriteLine("1)Static");
+            Static.total();
+
+            Console.WriteLine("2)Non-Static");
+            Static ns = new Static();
+            ns.mathsmarks();
+            Console.ReadLine();
+
+            /* Error Handling */
+            ErrorHandling eh = new ErrorHandling();
+            eh.display();
             Console.ReadLine();
         }
     }

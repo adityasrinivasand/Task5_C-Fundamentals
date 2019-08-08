@@ -12,8 +12,6 @@ namespace Task_5
         double d = 765.12;
         float f = 56.123F;
 
-        // Using Built- In Type Conversion 
-        // Methods & Displaying Result 
         public void displayic()
         {
             Console.WriteLine(Convert.ToString(f));
@@ -26,7 +24,6 @@ namespace Task_5
     {
         int x = 21;
         int y = 5;
-
         
         public void display()
         {

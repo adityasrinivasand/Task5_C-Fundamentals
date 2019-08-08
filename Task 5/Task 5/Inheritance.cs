@@ -8,8 +8,7 @@ namespace Task_5
 {
     class Inheritance
     {
-
-         protected int length;
+         public int length;
          public void setside(int a)
          {
             length = a;
@@ -17,9 +16,20 @@ namespace Task_5
     }
     class Square : Inheritance
     {
+        public int result = 0;
         public int getArea()
         {
-            return (length * length);
+            result = length * length;
+            return (result);
+        }
+    }
+    class Cube : Square
+    {
+        int volume;   
+        public int getVolume()
+        {
+            volume = result * length;
+            return volume;
         }
     }
 

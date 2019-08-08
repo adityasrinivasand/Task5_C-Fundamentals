@@ -44,6 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class.cs" />
+    <Compile Include="Base.cs" />
+    <Compile Include="ErrorHandling.cs" />
+    <Compile Include="Static.cs" />
     <Compile Include="Exceptional.cs" />
     <Compile Include="Overriding.cs" />
     <Compile Include="Conversion.cs" />
